@@ -100,6 +100,7 @@ final <- dcast(temp,Subject_ID + Activity ~ variable,mean)
 
 
 
+write.table(final, file = "./tidy_data.txt",row.names = FALSE)
 
 
 
